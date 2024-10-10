@@ -23,8 +23,6 @@
     .menu-item {
       padding: 10px;
     }
-    /* Media query for mobile devices */
-@media only screen and (max-width: 767px) {
     .button1 {
       width: 100%; /* Full width on mobile */
       padding-inline: 15px; /* Adjust padding for smaller screens */
@@ -45,7 +43,7 @@
   }
   
     /* Other styles for mobile */
-  }
+
   
 
 .button1{
