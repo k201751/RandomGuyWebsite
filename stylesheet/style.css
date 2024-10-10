@@ -23,6 +23,26 @@
     .menu-item {
       padding: 10px;
     }
+    /* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+    .button1 {
+      width: 100%; /* Full width on mobile */
+      padding-inline: 15px; /* Adjust padding for smaller screens */
+      transition: width 1s;
+    }
+  
+    #button1 {
+      transform: translateY(-150px); /* Adjust positioning for smaller screens */
+    }
+  
+    .button1:hover {
+      width: 100%; /* Keep width fluid on hover for mobile */
+    }
+    
+    #button2 {
+      border-radius: 20px; /* Optional: adjust border-radius for mobile */
+    }
+  }
   
     /* Other styles for mobile */
   }
