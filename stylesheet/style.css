@@ -1,3 +1,33 @@
+/* Media query for mobile devices (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile screens */
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .header {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    .menu-item {
+      padding: 10px;
+    }
+  
+    /* Other styles for mobile */
+  }
+  
+
 .button1{
     padding: 10px;
     padding-inline: 30px;
