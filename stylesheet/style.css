@@ -150,6 +150,39 @@ input{
 #suit{
   animation: move-right 5s infinite
 }
+
+a p{
+  color:black;
+}
+a p :hover{
+  color:black;
+  text-decoration:none;
+}
+a p :visited{
+  color: black;
+}
+a p :link{
+  color: black;
+  text-decoration: overline;
+}
+#behance-btn{
+  border-radius: 2rem; 
+  border-width: 0; 
+  background-color: black; 
+  margin: 0.25rem;
+}
+#behance-btn:hover{
+  background-color: rgb(92, 92, 92);
+}
+#insta-btn{
+  border-radius: 2rem; 
+  border-width: 0; 
+  background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7); 
+  margin: 0.25rem;
+}
+#insta-btn:hover{
+  background-image: linear-gradient(to bottom right, #efd579, #f189b4, #9573d9);
+}
 @keyframes change{
   0%
   {
