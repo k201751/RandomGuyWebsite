@@ -141,7 +141,7 @@ input{
 
 .slides{
   width: 75%;
-  background-image: url("../assets/login/img1.jpg");
+  background-image: url("../assets/login/img1.JPG");
   background-repeat: no-repeat;
   background-size:contain;
   background-position: center; 
@@ -153,32 +153,32 @@ input{
 @keyframes change{
   0%
   {
-    background-image: url("../assets/login/img1.jpg");
+    background-image: url("../assets/login/img1.JPG");
     background-size: cover;
   }
   20%
   {
-    background-image: url("../assets/login/img3.jpg");
+    background-image: url("../assets/login/img3.JPG");
     background-size: cover;
   }
   40%
   {
-    background-image: url("../assets/login/img4.jpg");
+    background-image: url("../assets/login/img4.JPG");
     background-size: cover;
   }
   60%
   {
-    background-image: url("../assets/login/img5.jpg");
+    background-image: url("../assets/login/img5.JPG");
     background-size: cover;
   }
   80%
   {
-    background-image: url("../assets/login/img2.jpg");
+    background-image: url("../assets/login/img2.JPG");
     background-size: cover;
   }
   100%
   {
-    background-image: url("../assets/login/img6.jpg");
+    background-image: url("../assets/login/img6.JPG");
     background-size: cover;
   }
   
