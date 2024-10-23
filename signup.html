@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet/style.css">
-    <title>Login | Random Guy</title>
+    <title>Register | Random Guy</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 </head>
 
@@ -28,10 +28,9 @@
                 <input type="text" name="email" placeholder="email" class="form" required>
                 <input type="password" name="password" placeholder="password" class="form" required>
                 <input type="password" name="rpassword" placeholder="repeat password" class="form" required>
-                <p></p>
+                <p id="error" style="color: crimson;"></p>
                 <div class="row" style="width: 100%; justify-content: center;">
-                    <input type="submit" class="login1" value="Login" class="form" style="width:40%; margin:5px" >
-                    <input type="button" class="button2" value="Register" class="form" onclick="loadSignup()" style="width:40%; margin:5px">
+                    <input type="button" class="login1" value="Register" class="form" onclick="checkSignupCredentials()" style="width:80%; margin:5px">
                 </div>
             </form>
         </div>
