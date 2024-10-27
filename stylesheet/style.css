@@ -3,7 +3,7 @@
     /* Styles for mobile screens */
     body {
       font-size: 16px;
-      padding: 10px;
+      padding: 2px;
     }
   
     .container {
@@ -24,9 +24,10 @@
       padding: 10px;
     }
     .button1 {
-      width: 100%; /* Full width on mobile */
+      width: 30%; /* Full width on mobile */
       padding-inline: 15px; /* Adjust padding for smaller screens */
       transition: width 1s;
+      font: 10px;
     }
   
     #button1 {
