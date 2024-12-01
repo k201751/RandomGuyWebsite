@@ -45,7 +45,66 @@ function checkSignupCredentials(){
         errorMsg.innerHTML = errorArr.join('\n');
          // Display errors if any
     } else {
+        const signupData = {
+            username: document.getElementById('username').value,
+            fullName: document.getElementById('fname').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value
+        };
+    
+        try {
+            // Send data to the server using a POST request
+            const response = fetch('mongodb://localhost:27017/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(signupData)
+            });
+    
+            const result = response.json();
+            if (response.ok) {
+                alert('Signup successful!');
+            } else {
+                alert(`Signup failed: ${result.message}`);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+        }
         errorMsg.innerHTML = "";
-        alert("Passwords match!");
     }
 }
+/*
+document.getElementById('signupForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    // Capture form data
+    const signupData = {
+        username: document.getElementById('username').value,
+        fullName: document.getElementById('fname').value,
+        email: document.getElementById('email').value,
+        password: document.getElementById('password').value
+    };
+
+    try {
+        // Send data to the server using a POST request
+        const response = await fetch('/api/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(signupData)
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            alert('Signup successful!');
+        } else {
+            alert(`Signup failed: ${result.message}`);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+    }
+});*/

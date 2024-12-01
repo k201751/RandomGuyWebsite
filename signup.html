@@ -22,7 +22,7 @@
     <section>
         <div class="container-fluid">
             <p class="h3">REGISTER</p><br>
-            <form action="">
+            <form id="signupForm" action="">
                 <input type="text" name="username" placeholder="username" class="form" required>
                 <input type="text" name="fname" placeholder="Full Name" class="form" required>
                 <input type="text" name="email" placeholder="email" class="form" required>
@@ -30,7 +30,7 @@
                 <input type="password" name="rpassword" placeholder="repeat password" class="form" required>
                 <p id="error" style="color: crimson;"></p>
                 <div class="row" style="width: 100%; justify-content: center;">
-                    <input type="button" class="login1" value="Register" class="form" onclick="checkSignupCredentials()" style="width:80%; margin:5px">
+                    <input type="submit" class="login1" value="Register" class="form" onclick="checkSignupCredentials()" style="width:80%; margin:5px">
                 </div>
             </form>
         </div>
