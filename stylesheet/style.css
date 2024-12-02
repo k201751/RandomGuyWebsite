@@ -335,8 +335,19 @@ body {
   }
 }
 
+#abdiv{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
 /* CSS */
-#add-btn-dash {
+  #add-btn-dash {
   appearance: none;
   background-color: #000000;
   border: 2px solid #1A1A1A;
@@ -344,7 +355,7 @@ body {
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
+  display:inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 10px;
   font-weight: 800;
@@ -362,22 +373,64 @@ body {
   touch-action: manipulation;
   width: 100px;
   will-change: transform;
-  position:absolute;
+  position: sticky;
+  z-index: 2;
+  transform: translateY(230px);
+}
+.modal-overlay {
+  top:0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
+/* Styles for the modal content */
+.modal-content {
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  top:0;
+  left:0;
+  font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
+  background-color:  rgb(230, 230, 230);
+  height: 80%;
+  width: 50%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items:normal;
+  z-index: 10;
+  overflow-y: hidden;
+}
+
+.modal-content-form{
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-base-color:#000000;
+}
 #add-btn-dash:disabled {
   pointer-events: none;
 }
 
 #add-btn-dash:hover {
   box-shadow: rgba(26, 26, 26, 0.4) 0 10px 10px;
-  transform: translateY(-2px);
+  transform: translateY(220px);
   transition: 0.5s;
+  z-index: 2;
 }
 
 #add-btn-dash:active {
   box-shadow: none;
-  transform: translateY(0);
+  transform: translateY(220px);
+  z-index: 1;
 }
 @keyframes change{
   0%

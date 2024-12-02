@@ -7,6 +7,17 @@ function loginBGchanger(){
 function loadLogin(){
     window.location.href = "./signin.html";
 }
+function matchCredentials(){
+    let username = document.getElementsByName('username').value; 
+    let password = document.getElementsByName('password').value;
+    window.location.href = "./dashboard.html";
+    alert(username);
+    if(username.stringify === "admin" && password.stringify === "admin"){
+        alert();
+        
+    }
+    alert("wrong password!! ");
+}
 function loadSignup(){
     window.location.href = "./signup.html";
 }
@@ -74,6 +85,16 @@ function checkSignupCredentials(){
         }
         errorMsg.innerHTML = "";
     }
+}
+
+function addbtnclick(){
+    document.getElementById("messageBox").style.display = "flex";
+    document.getElementById("abdiv").style.zIndex = "3";
+    document.getElementById("add-btn-dash").style.zIndex = "3";
+}
+
+function closeMsgBox(){
+    document.getElementById("messageBox").style.display = "none";
 }
 /*
 document.getElementById('signupForm').addEventListener('submit', async function(event) {
