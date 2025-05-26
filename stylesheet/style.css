@@ -1,51 +1,39 @@
 /* Media query for mobile devices (max-width: 767px) */
-@media only screen and (max-width: 767px) {
-    /* Styles for mobile screens */
-    body {
-      font-size: 16px;
-      padding: 2px;
-    }
-  
-    .container {
-      width: 100%;
-      margin: 0;
-    }
-  
-    .header {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    .menu {
-      display: block;
-    }
-  
-    .menu-item {
-      padding: 10px;
-    }
-    .button1 {
-      width: 30%; /* Full width on mobile */
-      padding-inline: 15px; /* Adjust padding for smaller screens */
-      transition: width 1s;
-      font: 10px;
-    }
-  
-    #button1 {
-      transform: translateY(-150px); /* Adjust positioning for smaller screens */
-    }
-  
-    .button1:hover {
-      width: 100%; /* Keep width fluid on hover for mobile */
-    }
-    
-    #button2 {
-      border-radius: 20px; /* Optional: adjust border-radius for mobile */
-    }
+@media (min-width: 1220px){
+  #front-text-div {
+  overflow: visible; 
+  min-width: 500px;
+}
+
+@media (max-width: 1220px){
+  #front-text-div {
+  overflow: visible; 
+  width: 90vw;
+}
+  .front-text-h1 {
+    font-size: 1rem;
   }
-  
+  #behance-btn{
+  border-radius: 2rem; 
+  border-width: 0; 
+  background-color: black; 
+  margin: 0.25rem;
+}
+#behance-btn:hover{
+  background-color: rgb(92, 92, 92);
+}
+#insta-btn{
+  border-radius: 2rem; 
+  border-width: 0; 
+  background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7); 
+  margin: 0.25rem;
+}
+#insta-btn:hover{
+  background-image: linear-gradient(to bottom right, #efd579, #f189b4, #9573d9);
+}
     /* Other styles for mobile */
 
-  
+
 
 .button1{
     padding: 10px;
@@ -300,40 +288,7 @@ body {
 
 
 
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
-  }
-  .ag-courses-item_title {
-    font-size: 24px;
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  .ag-format-container {
-    width: 96%;
-  }
-
-}
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
-  }
-  .ag-courses-item_link {
-    padding: 22px 40px;
-  }
-  .ag-courses-item_date-box {
-    font-size: 16px;
-  }
-}
 
 #abdiv{
   top: 0;
