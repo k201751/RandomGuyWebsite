@@ -2,7 +2,7 @@ var slides = document.getElementsByClassName('slides')
 loginBGchanger()
 function loginBGchanger(){
     setTimeout(() => {
-        slides[0].style.backgroundImage = "url('./assets/login/img2.jpg')";
+        slides.style.backgroundImage = "url('./assets/login/img2.jpg')";
     }, 5000);
 }
 function loadLogin(){
