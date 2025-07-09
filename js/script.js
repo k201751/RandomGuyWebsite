@@ -1,18 +1,20 @@
 var slides = document.getElementsByClassName('slides')
 loginBGchanger()
 function loginBGchanger(){
-    setTimeout(resolve, 5000);
-    slides.style.backgroundImage = "url('./assets/login/img2.jpg')";
+    setTimeout(() => {
+        slides[0].style.backgroundImage = "url('./assets/login/img2.jpg')";
+    }, 5000);
 }
 function loadLogin(){
     window.location.href = "./signin.html";
 }
 function matchCredentials(){
-    let username = document.getElementsByName('username').value; 
-    let password = document.getElementsByName('password').value;
+    let username = document.getElementsByName('username')[0].value;
+    let password = document.getElementsByName('password')[0].value;
+
     window.location.href = "./dashboard.html";
     alert(username);
-    if(username.stringify === "admin" && password.stringify === "admin"){
+    if(username === "admin" && password === "admin"){
         alert();
         
     }
@@ -53,7 +55,7 @@ function checkSignupCredentials(){
     }
     
     if(errorArr.length > 0){
-        errorMsg.innerHTML = errorArr.join('\n');
+        errorMsg.innerHTML = errorArr.join('<br>');
          // Display errors if any
     } else {
         const signupData = {
